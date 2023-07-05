@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Matching Game</h1>
+        </header>
+        <section class="score-panel">
+            <ul class="stars">
+                <li><i id="star1" class="fa-solid fa-star"></i></li>
+                <li><i id="star2" class="fa-solid fa-star"></i></li>
+                <li><i id="star3" class="fa-solid fa-star"></i></li>
+            </ul>
+
+            <div id="timeElapsed" class="timeElapsed">
+                <span id="secondElapsed">0</span> s
+            </div>
+
+            <div class="move">
+                <span id="movesNumberDisplay">0</span> Moves
+            </div>
+
+            <div class="matched">
+                <span id="matchedCoupleDisplay">0</span> /8 Matched
+            </div>
+
+            <div id="restartButton" class="restart">
+                <i class="fa-solid fa-rotate-right"></i>
+                <!-- <i class="fa-solid fa-repeat"></i> -->
+            </div>
+
+        </section>
+
+        <ul id="deck" class="deck">
+            <li class="card angular">
+                <i class="fa-brands fa-angular fa-2xl" style="color: #ba2121"></i>
+            </li>
+            <li class="card css">
+                <i class="fa-brands fa-css3 fa-2xl" style="color: #4176d2"></i>
+            </li>
+            <li class="card html5">
+                <i class="fa-brands fa-html5 fa-2xl" style="color: #c93b50"></i>
+            </li>
+            <li class="card js">
+                <i class="fa-brands fa-js fa-2xl" style="color: #eef218"></i>
+            </li>
+            <li class="card java">
+                <i class="fa-brands fa-java fa-2xl" style="color: #0741a6"></i>
+            </li>
+            <li class="card react">
+                <i class="fa-brands fa-react fa-2xl" style="color: #1dffff"></i>
+            </li>
+            <li class="card php">
+                <i class="fa-brands fa-php fa-2xl" style="color: #3c5cdd;"></i>
+            </li>
+            <li class="card github">
+                <i class="fa-brands fa-github fa-2xl" style="color: #061000"></i>
+            </li>
+            <li class="card angular">
+                <i class="fa-brands fa-angular fa-2xl" style="color: #ba2121"></i>
+            </li>
+            <li class="card css">
+                <i class="fa-brands fa-css3 fa-2xl" style="color: #4176d2"></i>
+            </li>
+            <li class="card html5">
+                <i class="fa-brands fa-html5 fa-2xl" style="color: #c93b50"></i>
+            </li>
+            <li class="card js">
+                <i class="fa-brands fa-js fa-2xl" style="color: #eef218"></i>
+            </li>
+            <li class="card java">
+                <i class="fa-brands fa-java fa-2xl" style="color: #0741a6"></i>
+            </li>
+            <li class="card react">
+                <i class="fa-brands fa-react fa-2xl" style="color: #1dffff"></i>
+            </li>
+            <li class="card php">
+                <i class="fa-brands fa-php fa-2xl" style="color: #3c5cdd;"></i>
+            </li>
+            <li class="card github">
+                <i class="fa-brands fa-github fa-2xl" style="color: #061000"></i>
+            </li>
+        </ul>
+    </div>
+
+    <section
+    id="previous-score__container" class="previous-score__container">
+        <h2>Check your previous score!</h2>
+        <table id="previous-score__table" 
+        class="previous-score__table">
+            <tr>
+                <th colspan="4">
+                    Your previous score
+                </th>
+            </tr>
+            <tr>
+                <th>Match n.</th>
+                <th>Time Elapsed</th>
+                <th>Moves Number</th>
+                <th>
+                    <i id="star1" class="fa-solid fa-star"></i>
+                    Star Rating <i id="star1" class="fa-solid fa-star"></i>
+                </th>
+            </tr>
+        </table>
+    </section>
+
+    <audio id="success" src="audio/short-success-sound-glockenspiel-treasure-video-game-6346.mp3" preload="auto"></audio>
+    <audio id="fail" src="audio/error-126627.mp3" preload="auto"></audio>
+
+    <script src="main.js"></script>
+</body>
+</html>
